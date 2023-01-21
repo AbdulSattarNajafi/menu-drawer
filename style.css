@@ -31,8 +31,7 @@ body {
     background-color: transparent;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(70px);
-    transition: transform .3s linear, opacity .35s linear .1s, visibility .35s linear .1s;
+    transition: all .3s linear;
     z-index: 777;
 }
 
@@ -156,7 +155,6 @@ body {
 @media screen and (max-width: 575.98px) {
     .menu-drawer {
         padding: 0 12px;
-        transform: translateY(90px);
     }
     .menu-drawer__list {
         border: 1px solid #ECF0FF;
