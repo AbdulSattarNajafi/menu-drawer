@@ -47,7 +47,7 @@ body {
     border-top: 1px solid #ECF0FF;
     margin: 0;
     padding: 0;
-    padding-bottom: 70px;
+    padding-bottom: 82px;
 }
 
 .menu-drawer__list-item {
@@ -60,14 +60,15 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #383838;
-    font-weight: 600;
-    padding: 16px 16px;
+    font-weight: 700;
+    padding: 18px 20px;
 }
 
 .menu-drawer__list-icon {
-    margin-right: 15px;
+    font-size: 20px;
+    margin-right: 12px;
 }
 
 .menu-drawer-backdrop {
@@ -81,7 +82,7 @@ body {
 .menu__btn {
     position: fixed;
     left: 50%;
-    bottom: 16px;
+    bottom: 14px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -91,8 +92,8 @@ body {
     line-height: 20px;
     color: #ffffff;
     border-radius: 40px;
-    width: 164px;
-    height: 44px;
+    width: 186px;
+    height: 52px;
     transform: translateX(-50%);
     transition: all .3s ease;
     cursor: pointer;
@@ -158,5 +159,13 @@ body {
         border-bottom: none;
         border-radius: 6px 6px 0 0;
         grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 78px;
+    }
+    .menu-drawer__list-link  {
+        padding: 12px 16px;
+    }
+    .menu__btn {
+        width: 164px;
+        height: 48px;
     }
 }
