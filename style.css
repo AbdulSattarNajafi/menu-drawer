@@ -31,15 +31,13 @@ body {
     background-color: transparent;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(100%);
-    transition: transform .3s ease-out, opacity .23s ease-out, visibility .2s ease-out;
+    transition: opacity .45s ease-out , visibility .45s ease-out;
     z-index: 777;
 }
 
 .menu-drawer.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
 }
 
 .menu-drawer__list {
