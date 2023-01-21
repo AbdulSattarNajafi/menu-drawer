@@ -29,14 +29,16 @@ body {
     display: none;
     width: 100%;
     background-color: transparent;
+    visibility: hidden;
     opacity: 0;
     transform: translateY(100%);
-    transition: all .5s ease-in-out;
+    transition: transform .3s ease-out, opacity .23s ease-out, visibility .2s ease-out;
     z-index: 777;
 }
 
 .menu-drawer.show {
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
 }
 
@@ -60,15 +62,16 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #383838;
-    font-weight: 700;
-    padding: 18px 20px;
+    font-weight: 600;
+    padding: 22px 20px;
+    padding-right: 16px;
 }
 
 .menu-drawer__list-icon {
     font-size: 20px;
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .menu-drawer-backdrop {
@@ -162,6 +165,7 @@ body {
         padding-bottom: 78px;
     }
     .menu-drawer__list-link  {
+        font-size: 14px;
         padding: 12px 16px;
     }
     .menu__btn {
