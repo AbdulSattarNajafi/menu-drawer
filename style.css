@@ -31,7 +31,7 @@ body {
     background-color: transparent;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s linear;
+    transition: all .15s linear;
     z-index: 777;
 }
 
