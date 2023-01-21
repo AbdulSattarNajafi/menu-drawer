@@ -32,7 +32,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transform: translateY(70px);
-    transition: all .3s ease-out;
+    transition: transform .3s linear, opacity .3s linear, visibility .3s linear;
     z-index: 777;
 }
 
