@@ -68,8 +68,8 @@ body {
     padding-right: 16px;
 }
 
-.menu-drawer__list-icon {
-    font-size: 20px;
+.menu-drawer__list-link svg,
+.menu-drawer__list-link img {
     margin-right: 10px;
 }
 
