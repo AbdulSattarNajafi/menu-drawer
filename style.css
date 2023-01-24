@@ -92,6 +92,12 @@ body {
     font-weight: 600;
     padding: 14px 22px;
     padding-right: 16px;
+    transition: all .3s ease;
+}
+
+.menu-drawer__list-link:hover,
+.menu-drawer__list-link.active {
+    background-color: #dff2fe;
 }
 
 .menu-drawer__list-link svg,
