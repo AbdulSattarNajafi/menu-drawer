@@ -216,21 +216,20 @@
         let menuHeight = menuContainer.clientHeight;
 
         window.addEventListener('resize', () => {
-
             MenuScrollHeight = menuContainer.scrollHeight;
             menuHeight = menuContainer.clientHeight;
 
-            if(MenuScrollHeight - 5 <= menuHeight) {
+            if(MenuScrollHeight <= menuHeight) {
                 shadowBottom.classList.add('hide');
             }else {
                 shadowBottom.classList.remove('hide');
             }
-        })
+        });
 
         menuContainer.addEventListener('scroll', (e) => {
             const scrollValue = menuContainer.scrollTop;
 
-            if(scrollValue + menuHeight >= MenuScrollHeight) {
+            if(scrollValue + menuHeight + 5 >= MenuScrollHeight) {
                 shadowBottom.classList.add('hide');
                 shadowTop.classList.remove('hide');
             }
