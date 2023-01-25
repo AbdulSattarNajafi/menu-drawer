@@ -19,12 +19,32 @@ body {
     font-weight: 400;
     color: #202020;
     overscroll-behavior: none;
+    overflow: hidden;
+}
+
+.layout {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.main-content {
+    height: 3000px;
+    padding: 40px 32px;
+}
+
+.main-content p {
+    margin-bottom: 16px;
 }
 
 .menu-drawer {
     position: relative;
     width: 190px;
-    height: 100vh;
+    height: 100%;
     background-color: #f8f9fa;
     border-right: 1px solid #ECF0FF;
     scrollbar-width: 4px;
