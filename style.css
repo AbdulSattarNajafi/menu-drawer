@@ -19,32 +19,41 @@ body {
     font-weight: 400;
     color: #202020;
     overscroll-behavior: none;
-    overflow: hidden;
-}
-
-.layout {
-    display: flex;
 }
 
 main {
-    flex: 1;
+    float: left;
+    width: calc(100% - 180px);
     height: 100%;
     overflow-y: auto;
 }
 
+@media screen and (max-width: 1023.98px) {
+    main {
+        width: 100%;
+    }
+}
+
 .main-content {
-    height: 3000px;
-    padding: 40px 32px;
+    padding: 16px;
 }
 
 .main-content p {
     margin-bottom: 16px;
 }
 
+/* ========= Ignore the above CSS ======== */
+.menu-drawer-wrapper {
+    float: left;
+    width: 180px;
+    height: 16px;
+}
 .menu-drawer {
-    position: relative;
-    width: 190px;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100vh;
     background-color: #f8f9fa;
     border-right: 1px solid #ECF0FF;
     scrollbar-width: 4px;
@@ -70,7 +79,7 @@ main {
     position: fixed;
     left: 0;
     top: 0;
-    width: 190px;
+    width: 180px;
     height: 70px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1), transparent);
     opacity: 1;
@@ -95,7 +104,7 @@ main {
     flex-direction: column;
     background-color: #f4fbff;
     margin: 0;
-    padding: 14px 0;
+    padding: 0;
 }
 
 .menu-drawer__list-item {
@@ -110,8 +119,8 @@ main {
     font-size: 16px;
     color: #383838;
     font-weight: 600;
-    padding: 14px 22px;
-    padding-right: 16px;
+    padding: 14px 19px;
+    padding-right: 14px;
     transition: all .3s ease;
 }
 
@@ -122,7 +131,7 @@ main {
 
 .menu-drawer__list-link svg,
 .menu-drawer__list-link img {
-    margin-right: 15px;
+    margin-right: 9px;
 }
 
 .menu-drawer-backdrop {
@@ -192,8 +201,7 @@ main {
 
 @media screen and (max-width: 1023.98px) {
     .menu-drawer {
-        position: fixed;
-        left: 0;
+        top: unset;
         bottom: 0;
         border: none;
         background-color: transparent;
