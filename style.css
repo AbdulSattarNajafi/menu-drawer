@@ -59,7 +59,7 @@ main {
     top: 0;
     width: 180px;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #f4fbff;
     border-right: 1px solid #ECF0FF;
     scrollbar-width: 4px;
     overflow-y: auto;
@@ -106,7 +106,7 @@ main {
 .menu-drawer__list {
     display: flex;
     flex-direction: column;
-    background-color: #f4fbff;
+    /* background-color: #f4fbff; */
     margin: 0;
     padding: 0;
 }

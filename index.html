@@ -283,6 +283,12 @@
         let MenuScrollHeight = menuContainer.scrollHeight;
         let menuHeight = menuContainer.clientHeight;
 
+        if(MenuScrollHeight <= menuHeight) {
+            shadowBottom.classList.add('hide');
+        }else {
+            shadowBottom.classList.remove('hide');
+        }
+
         window.addEventListener('resize', () => {
             MenuScrollHeight = menuContainer.scrollHeight;
             menuHeight = menuContainer.clientHeight;
