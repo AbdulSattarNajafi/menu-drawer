@@ -104,10 +104,12 @@ main {
 }
 
 .menu-drawer__list {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    z-index: 12;
 }
 
 .menu-drawer__list-item {
